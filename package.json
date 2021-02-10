@@ -1,0 +1,14 @@
+{
+	"name": "samipourquoi",
+	"version": "1.0.0",
+	"description": "My personal web server",
+	"repository": "https://github.com/samipourquoi/samipourquoi.git",
+	"author": "samipourquoi",
+	"license": "MIT",
+	"scripts": {
+		"build": "parcel build src/index.html",
+		"dev": "parcel src/index.html",
+		"build:docker": "yarn build && cd docker && docker-compose build",
+		"start:docker": "cd docker && docker-compose up -d"
+	}
+}
