@@ -10,5 +10,14 @@
 		"dev": "parcel src/index.html",
 		"build:docker": "yarn build && cd docker && docker-compose build",
 		"start:docker": "cd docker && docker-compose up -d"
+	},
+	"dependencies": {
+		"react": "^17.0.1",
+		"react-dom": "^17.0.1"
+	},
+	"devDependencies": {
+		"@types/react": "^17.0.1",
+		"@types/react-dom": "^17.0.0",
+		"typescript": "^4.1.5"
 	}
 }

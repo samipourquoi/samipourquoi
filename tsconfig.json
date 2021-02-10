@@ -1,0 +1,7 @@
+{
+	"compilerOptions": {
+		"moduleResolution": "Node",
+		"jsx": "react",
+		"allowSyntheticDefaultImports": true
+	}
+}
