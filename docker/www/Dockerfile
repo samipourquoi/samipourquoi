@@ -1,9 +1,9 @@
-FROM nginx
+FROM staticfloat/nginx-certbot
 
 WORKDIR /www
 
-COPY ./.nginx/nginx.conf /etc/nginx/nginx.conf
-
 COPY . .
 
-ENTRYPOINT [ "nginx", "-g", "daemon off;" ]
+COPY ./docker/nginx/www.conf /etc/nginx/user.conf.d/www.conf
+
+COPY . .
