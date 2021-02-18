@@ -6,8 +6,8 @@
 	"author": "samipourquoi",
 	"license": "MIT",
 	"scripts": {
-		"build": "parcel build src/index.html",
-		"dev": "parcel src/index.html",
+		"build": "npx parcel build src/index.html",
+		"dev": "npx parcel src/index.html",
 		"build:docker": "yarn build && cd docker && docker-compose build",
 		"start:docker": "cd docker && docker-compose up -d"
 	},
